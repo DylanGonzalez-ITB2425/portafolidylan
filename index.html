@@ -19,31 +19,25 @@
 
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="#" onclick="showSection('autor')">Inicio</a></li>
             <li>
 
-                <a href="#">Proyectos</a>
+                <a href="#" onclick="showSection('proyectos')">Proyectos</a>
                 <ul class="dropdown">
-                    <li><a href="#">Todos los proyectos</a></li>
+                    <li><a href="#" onclick="showSection('proyectos')">Todos los proyectos</a></li>
                     <li><a href="proyecto1.html">Conversión de Archivos</a></li>
-                    <li><a href="#">Creación de esta pagina web</a></li>
+                    <li><a href="#" onclick="showSection('subtema3')">Creación de esta pagina web</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#" onclick="showSection('formulario-contacto')">Contacto</a></li>
         </ul>
     </nav>
-
-
-
-
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="repositorio.js"></script>
-    </nav>
 
 </header>
-
 
 
 
@@ -52,13 +46,6 @@
         <div class="contenedor-autor">
             <div class="seccion_autor1">
                 <h3>Dylan Brandon Gonzalez Lopez</h3>
-
-                <button id="changeColorBtn">Cambiar color</button>
-                <button id="fontSizeBtn">Cambiar tamaño de fuente</button>
-                <button id="toggleBtn">Mostrar/Ocultar texto</button>
-
-                <p id="textElement">Este es un texto que se puede ocultar.</p>
-
                 <p id="subtitulo"><u>Estudiante desarrollador web</u></p>
 
                 <a><ion-icon name="mail-outline"></ion-icon>
@@ -81,8 +68,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section id="proyectos" class="section">
         <div class="contenedor-proyecto">
 
@@ -102,7 +89,7 @@
                         Se implementaron parámetros específicos para extraer la información más relevante y significativa del dataset original.
                     </p>
                     <!-- Enlace al archivo HTML con más detalles -->
-                    <a href="/proyectos/proyecto1.html" class="enlace-detalle">Ver más detalles</a>
+                    <a href="#" class="enlace-detalle">Ver más detalles</a>
                 </article>
             </div>
         </div>
@@ -118,11 +105,11 @@
                         Se utilizaron tecnologías como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> para estructurar y dar estilo al contenido, permitiendo una navegación fluida.
                     </p>
 
-                    <a href="#" class="/proyectos/proyecto2.html">Ver más detalles</a>
+                    <a href="#" class="enlace-detalle">Ver más detalles</a>
                 </article>
             </div>
         </div>
-    
+
     </section>
 
 

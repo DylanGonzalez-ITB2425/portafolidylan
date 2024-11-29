@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dylan">
+    <meta name="description" content="Portfolio web creado por Dylan para mostrar mis proyectos personales y profesionales.">
+    <title>Portfolio de Dylan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+<header>
+    <a href="#" class="logo">
+
+        <img src="itb0.png" alt="Logo del Instituto" />
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>
+
+                <a href="#">Proyectos</a>
+                <ul class="dropdown">
+                    <li><a href="#">Todos los proyectos</a></li>
+                    <li><a href="proyecto1.html">Conversión de Archivos</a></li>
+                    <li><a href="#">Creación de esta pagina web</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="repositorio.js"></script>
+    </nav>
+
+</header>
+
+
+
+
+<main>
+    <section id="autor" class="section active">
+        <div class="contenedor-autor">
+            <div class="seccion_autor1">
+                <h3>Dylan Brandon Gonzalez Lopez</h3>
+
+                <button id="changeColorBtn">Cambiar color</button>
+                <button id="fontSizeBtn">Cambiar tamaño de fuente</button>
+                <button id="toggleBtn">Mostrar/Ocultar texto</button>
+
+                <p id="textElement">Este es un texto que se puede ocultar.</p>
+
+                <p id="subtitulo"><u>Estudiante desarrollador web</u></p>
+
+                <a><ion-icon name="mail-outline"></ion-icon>
+                    <div id="correo_autor" onclick="copyText()">dylangonzloz@gmail.com</div>
+                    <div id="confirmacion_mensaje">¡Texto copiado al portapapeles!</div>
+                </a>
+            </div>
+
+            <div class="seccion_autor2">
+                <article>
+                    <h3>Conocimientos</h3>
+                    <h4><u>Lenguajes de programación</u></h4>
+                    <ul>
+                            <li id="HTML"><span class="color">HTML</span> - BÁSICO</li>
+                            <li id="PYTHON"><span class="color">PYTHON</span> - BÁSICO</li>
+                            <li id="CSS"><span class="color">CSS</span> - BÁSICO</li>
+                            <li id="JAVASCRIPT"><span class="color">JAVASCRIPT</span> - BÁSICO</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="proyectos" class="section">
+        <div class="contenedor-proyecto">
+
+        <div class="descripcion-destacados">
+            <h3>Proyectos Destacados</h3>
+            <p>A continuación, encontrarás proyectos realizados durante mi formación como desarrollador web.</p>
+        </div>
+
+        <!-- Contenedor de proyectos destacados -->
+        <div class="destacados-container">
+            <!-- Primer proyecto destacado -->
+            <div class="seccion_proyecto2">
+                <article>
+                    <h2>Conversión de Archivos</h2>
+                    <p>
+                        Este proyecto realiza la conversión de un archivo <b>CSV</b> a <b>XML</b> y posteriormente a <b>JSON</b>.
+                        Se implementaron parámetros específicos para extraer la información más relevante y significativa del dataset original.
+                    </p>
+                    <!-- Enlace al archivo HTML con más detalles -->
+                    <a href="/proyectos/proyecto1.html" class="enlace-detalle">Ver más detalles</a>
+                </article>
+            </div>
+        </div>
+
+
+        <!-- Contenedor de proyectos destacados -->
+        <div class="destacados-container">
+            <!-- Primer proyecto destacado -->
+            <div class="seccion_proyecto2">
+                <article>
+                    <h2>Creación de esta Página Web</h2>
+                    <p>Este proyecto describe el proceso de creación de la página web que estás visualizando.
+                        Se utilizaron tecnologías como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> para estructurar y dar estilo al contenido, permitiendo una navegación fluida.
+                    </p>
+
+                    <a href="#" class="/proyectos/proyecto2.html">Ver más detalles</a>
+                </article>
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+
+
+
+    <section id="formulario-contacto" class="section">
+        <h2>¡Contáctame!</h2>
+
+        <form class="formulario" action="https://formspree.io/f/xeoqrrdk" method="POST">
+
+            <input type="text" placeholder="Primer nombre" required name="name">
+            <input type="text" placeholder="Apellidos" required name="name">
+            <input type="email" placeholder="Dirección de correo electrónico" required name="name">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <ul class="social">
+            <li href=" " class="iconos">
+                <a href="https://es.linkedin.com/in/dylan-brandon-gonzalez-lopez-45ab11309"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/DylanGonzalez-ITB2425"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.instagram.com/itecbcn/"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+        </li>
+    </ul>
+    <p>&copy; 2024 Todos los derechos reservados. Grado superior de ASIR - Dylan</p>
+</footer>
+
+</body>
+</html>

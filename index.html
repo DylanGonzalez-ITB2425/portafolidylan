@@ -14,29 +14,35 @@
 <header>
     <a href="#" class="logo">
 
-        <img src="itb0.png" alt="Logo del Instituto" />
+        <img src="imagenes/itb.png" alt="Logo del Instituto" />
     </a>
 
     <nav>
         <ul>
-            <li><a href="#" onclick="showSection('autor')">Inicio</a></li>
+            <li>
+                <a href="#" onclick="showSection('autor')">Inicio</a>
+            </li>
             <li>
 
-                <a href="#" onclick="showSection('proyectos')">Proyectos</a>
+                <a
+                        href="#">Proyectos
+                </a>
+
                 <ul class="dropdown">
                     <li><a href="#" onclick="showSection('proyectos')">Todos los proyectos</a></li>
-                    <li><a href="proyecto1.html">Conversión de Archivos</a></li>
-                    <li><a href="#" onclick="showSection('subtema3')">Creación de esta pagina web</a></li>
+                    <li><a href="conversiondearchivos/conversiondearchivos.html">Conversión de Archivos</a></li>
+                    <li><a href="creacionpaginaweb/creacionpaginaweb.html" onclick="showSection('subtema3')">Creación de esta pagina web</a></li>
                 </ul>
             </li>
-            <li><a href="#" onclick="showSection('formulario-contacto')">Contacto</a></li>
+            <li>
+                <a href="#" onclick="showSection('formulario-contacto')">Contacto</a>
+            </li>
         </ul>
     </nav>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="repositorio.js"></script>
-
 </header>
 
 
@@ -46,9 +52,12 @@
         <div class="contenedor-autor">
             <div class="seccion_autor1">
                 <h3>Dylan Brandon Gonzalez Lopez</h3>
-                <p id="subtitulo"><u>Estudiante desarrollador web</u></p>
+                <p
+                        id="subtitulo"><u>Estudiante desarrollador web</u>
+                </p>
 
-                <a><ion-icon name="mail-outline"></ion-icon>
+                <a>
+                    <ion-icon name="mail-outline"></ion-icon>
                     <div id="correo_autor" onclick="copyText()">dylangonzloz@gmail.com</div>
                     <div id="confirmacion_mensaje">¡Texto copiado al portapapeles!</div>
                 </a>
@@ -73,43 +82,45 @@
     <section id="proyectos" class="section">
         <div class="contenedor-proyecto">
 
-        <div class="descripcion-destacados">
-            <h3>Proyectos Destacados</h3>
-            <p>A continuación, encontrarás proyectos realizados durante mi formación como desarrollador web.</p>
-        </div>
-
-        <!-- Contenedor de proyectos destacados -->
-        <div class="destacados-container">
-            <!-- Primer proyecto destacado -->
-            <div class="seccion_proyecto2">
-                <article>
-                    <h2>Conversión de Archivos</h2>
-                    <p>
-                        Este proyecto realiza la conversión de un archivo <b>CSV</b> a <b>XML</b> y posteriormente a <b>JSON</b>.
-                        Se implementaron parámetros específicos para extraer la información más relevante y significativa del dataset original.
-                    </p>
-                    <!-- Enlace al archivo HTML con más detalles -->
-                    <a href="#" class="enlace-detalle">Ver más detalles</a>
-                </article>
+            <div class="descripcion-destacados">
+                <h3>Proyectos Destacados</h3>
+                <p>A continuación, encontrarás proyectos realizados durante mi formación como desarrollador web.</p>
             </div>
-        </div>
+
+            <div class="destacados-contenedor">
+
+                <div class="seccion_proyecto2">
+                    <article>
+                        <h2>Conversión de Archivos</h2>
+                        <p>
+                            Este proyecto realiza la conversión de un archivo <b>CSV</b> a <b>XML</b> y posteriormente a <b>JSON</b>.
+                            Se implementaron parámetros específicos para extraer la información más relevante y significativa del dataset original.
+                        </p>
+
+                        <a target="_blank" href="conversiondearchivos/conversiondearchivos.html" class="enlace-detalle">Ver más detalles</a>
+                    </article>
+                </div>
+            </div>
 
 
-        <!-- Contenedor de proyectos destacados -->
-        <div class="destacados-container">
-            <!-- Primer proyecto destacado -->
+
+        <div class="destacados-contenedor">
             <div class="seccion_proyecto2">
                 <article>
-                    <h2>Creación de esta Página Web</h2>
+                    <h2>
+                        Creación de esta Página Web
+                    </h2>
                     <p>Este proyecto describe el proceso de creación de la página web que estás visualizando.
-                        Se utilizaron tecnologías como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> para estructurar y dar estilo al contenido, permitiendo una navegación fluida.
+                        Se utilizaron tecnologías como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> para estructurar
+                        y dar estilo al contenido, permitiendo una navegación fluida.
                     </p>
 
-                    <a href="#" class="enlace-detalle">Ver más detalles</a>
+                    <a
+                            href="creacionpaginaweb/creacionpaginaweb.html" class="enlace-detalle">Ver más detalles
+                    </a>
                 </article>
             </div>
         </div>
-
     </section>
 
 
@@ -119,14 +130,16 @@
 
 
     <section id="formulario-contacto" class="section">
-        <h2>¡Contáctame!</h2>
+        <h2>
+            ¡Contáctame!
+        </h2>
 
         <form class="formulario" action="https://formspree.io/f/xeoqrrdk" method="POST">
 
-            <input type="text" placeholder="Primer nombre" required name="name">
-            <input type="text" placeholder="Apellidos" required name="name">
-            <input type="email" placeholder="Dirección de correo electrónico" required name="name">
-            <button type="submit">Enviar</button>
+            <input type="texto" placeholder="Primer nombre" required name="nom">
+            <input type="texto" placeholder="Apellidos" required name="nom">
+            <input type="email" placeholder="Dirección de correo electrónico" required name="nom">
+            <button type="enviar">Enviar</button>
         </form>
     </section>
 
@@ -136,13 +149,13 @@
 <footer class="footer">
     <ul class="social">
             <li href=" " class="iconos">
-                <a href="https://es.linkedin.com/in/dylan-brandon-gonzalez-lopez-45ab11309"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="https://github.com/DylanGonzalez-ITB2425"><ion-icon name="logo-github"></ion-icon></a>
-                <a href="https://www.instagram.com/itecbcn/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a target="_blank" href="https://es.linkedin.com/in/dylan-brandon-gonzalez-lopez-45ab11309"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a target="_blank" href="https://github.com/DylanGonzalez-ITB2425"><ion-icon name="logo-github"></ion-icon></a>
+                <a target="_blank" href="https://www.instagram.com/itecbcn/"><ion-icon name="logo-instagram"></ion-icon></a>
             </li>
         </li>
     </ul>
-    <p>&copy; 2024 Todos los derechos reservados. Grado superior de ASIR - Dylan</p>
+    <p>&copy; 2024 Todos los derechos reservados. Grado superior de ASIR </p>
 </footer>
 
 </body>

@@ -1,0 +1,233 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(40, 0, 142, 0.89), rgba(79, 0, 143, 0.89), rgba(40, 0, 142, 0.89));
+    color: white;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo img {
+    height: 35px;
+}
+
+header nav a {
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+header nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li .dropdown {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(40, 0, 142, 0.89);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul li .dropdown li {
+  margin: 5px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: block;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #c2bacb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+main:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.project-details {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.detail {
+    padding: 15px;
+    border: 1px solid #c2bacb;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.detail h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.detail p, .detail ul {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.detail:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.repository-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.repository-link a {
+    font-size: 16px;
+    color: #461c9a;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.repository-link a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social .iconos {
+    display: inline-block;
+}
+
+.social a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: rgba(81, 28, 209, 0.89);
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+@media (max-width: 360px) {
+    header, footer {
+        width: 100%;
+    }
+}

@@ -3,28 +3,27 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Usa min-height en lugar de height */
+    min-height: 100vh;
     background: linear-gradient(to top, rgba(40, 0, 142, 0.89), rgba(79, 0, 143, 0.89), rgba(40, 0, 142, 0.89));
     color: white;
-    justify-content: flex-start; /* Alinea los elementos al principio */
+    justify-content: flex-start;
+    overflow-x: hidden;
 }
 
-
-
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 10px;
     background-color: #000000;
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .logo img {
-    height: 50px;
+    height: 35px;
 }
 
 header nav a {
@@ -37,7 +36,7 @@ header nav a {
     color: white;
 }
 
-header nav a::after {
+header nav a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -56,14 +55,14 @@ header nav a:hover::after {
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-  position: relative;
+    position: relative;
 }
 
 nav ul li .dropdown {
@@ -81,27 +80,19 @@ nav ul li .dropdown {
 }
 
 nav ul li:hover .dropdown {
-  display: block;
+    display: block;
 }
 
 nav ul li .dropdown li {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 10px 15px;
-  display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
 }
-
-
-
-
-
-
-
-
 
 .section {
     display: none;
@@ -119,24 +110,28 @@ nav ul li a {
     }
 }
 
-
-
-
-
-
-
-
-
 .contenedor-autor {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
-.seccion_autor1,
+.seccion_autor1 {
+    background: #c3bbcc;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+    color: #000000;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 4px 6px white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 .seccion_autor2 {
     background: #c3bbcc;
     border-radius: 10px;
@@ -146,8 +141,9 @@ nav ul li a {
     height: 200px;
     width: 300px;
     box-shadow: 0 4px 6px white;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
-
 
 .seccion_autor1 h3 {
     text-wrap: balance;
@@ -166,23 +162,15 @@ nav ul li a {
     text-decoration: #ffcc00 solid;
 }
 
-
 .seccion_autor1 a {
-    margin-top: 10px;
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
     text-align: center;
-    padding-top: 10px;
 }
-
-
-
-
 
 #correo_autor {
     clear: left;
@@ -192,7 +180,6 @@ nav ul li a {
     font-style: italic;
     cursor: pointer;
     padding-left: 10px;
-
 }
 
 #correo_autor:hover {
@@ -206,27 +193,11 @@ nav ul li a {
 #confirmacion_mensaje {
     font-size: 15px;
     display: none;
-    width: 220px; /* Ajusta el ancho para móviles */
-    top: 400px;
     background-color: rgba(40, 0, 142, 0.89);
     color: white;
     text-align: center;
     position: fixed;
 }
-
-
-
-@media (max-width: 768px) {
-    .contenedor-autor {
-        flex-direction: column;
-    }
-    .seccion_autor1, .seccion_autor2 {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-}
-
-
 
 .seccion_autor2 {
     font-family: Georgia, serif;
@@ -239,14 +210,12 @@ nav ul li a {
 }
 
 .seccion_autor2 ul {
-    list-style-type: none; /* Elimina viñetas */
-    padding: 0; /* Elimina el espacio interno */
-    margin: 0; /* Elimina márgenes adicionales */
-    display: inline; /* Alinea los elementos como texto en línea */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
     cursor: pointer;
 }
-
-
 
 #HTML .color {
     color: rgba(40, 0, 142, 0.89);
@@ -264,8 +233,6 @@ nav ul li a {
     color: rgba(40, 0, 142, 0.89);
 }
 
-
-
 .seccion_autor2 ul li:hover {
     color: rgba(40, 0, 142, 0.89);
     transform: scale(1.02);
@@ -274,10 +241,6 @@ nav ul li a {
 
 
 
-
-
-
-/* Contenedor de descripción de proyectos */
 .descripcion-destacados {
     text-align: center;
     padding: 20px;
@@ -302,22 +265,6 @@ nav ul li a {
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contenedor-proyecto {
     display: flex;
     justify-content: center;
@@ -327,12 +274,7 @@ nav ul li a {
     padding: 20px;
 }
 
-
-
-
-
-/* Contenedor de proyectos destacados */
-.destacados-container {
+.destacados-contenedor {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -345,8 +287,7 @@ nav ul li a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Proyecto individual dentro del contenedor */
-.destacados-container .seccion_proyecto2 {
+.destacados-contenedor .seccion_proyecto2 {
     background: #c3bbcc;
     border-radius: 10px;
     padding: 15px;
@@ -364,7 +305,6 @@ nav ul li a {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Detalle del proyecto */
 .detalle-proyecto {
     margin: 20px auto;
     padding: 20px;
@@ -394,7 +334,6 @@ nav ul li a {
     margin: 5px 0;
 }
 
-/* Enlace de detalles */
 .enlace-detalle {
     display: inline-block;
     margin-top: 15px;
@@ -411,15 +350,6 @@ nav ul li a {
     transition: background-color 1s ease;
 }
 
-
-
-
-
-
-
-
-
-
 #formulario-contacto {
     padding: 40px 20px;
     margin: 20px auto;
@@ -432,7 +362,6 @@ nav ul li a {
 #formulario-contacto h2 {
     color: #000000;
 }
-
 
 .formulario input {
     display: block;
@@ -462,14 +391,13 @@ nav ul li a {
     color: rgba(40, 0, 142, 0.89);
 }
 
-
-
 footer {
     margin-top: auto;
     background-color: #000000;
     color: white;
-    padding: 20px;
     text-align: center;
+    width: 100%;
+    padding: 15px 10px;
 }
 
 .social {
@@ -500,3 +428,10 @@ footer {
     font-size: 14px;
     color: #ccc;
 }
+
+@media (max-width: 360px) {
+    header, footer {
+        width: 100%;
+    }
+}
+

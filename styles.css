@@ -136,24 +136,6 @@ nav ul li a {
     margin-top: 10%;
 }
 
-#textElement {
-    display: block;
-    margin-top: 20px;
-}
-
-/* Estilo para los botones */
-button {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ddd;
-}
-
-
 .seccion_autor1,
 .seccion_autor2 {
     background: #c3bbcc;
@@ -234,7 +216,7 @@ button:hover {
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .contenedor-autor {
         flex-direction: column;
     }
